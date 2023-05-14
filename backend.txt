@@ -1,0 +1,7 @@
+    P_data1 = model*factor1
+    P_data2 = model*factor2
+    #ideal_data = model*data
+    plt.plot(day,P_data1)
+    plt.plot(day,P_data2)
+    plt.plot(day,ideal_data)
+    plt.show()
