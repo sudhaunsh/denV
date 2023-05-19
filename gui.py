@@ -109,8 +109,11 @@ def plot_grph(plot_data):
     x = plot_data[0]
     y = plot_data[1]
     y1 = plot_data[2]
+    plot1.clear()
     plot1.plot(x,y,label = "Platelet count 1")
     plot1.plot(x,y1,label = "Platelet count 2")
+    plot1.set_xlabel("Days")
+    plot1.set_ylabel("Platelet count in thousands")
     plot1.legend()
     canvas.draw()
     

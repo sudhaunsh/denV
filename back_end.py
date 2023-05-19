@@ -78,9 +78,13 @@ def estimate(verify_val):
     for n in day:
         P_data1 = (P_data1_m.subs(x,n))
         P_data1 = abs(P_data1)
+        if P_data1 > 350:
+            P_data1 = 350
         pat_data1.append(P_data1)
         P_data2 = (P_data2_m.subs(x,n))
         P_data2 = abs(P_data2)
+        if P_data2 > 350:
+            P_data2 = 350
         pat_data2.append(P_data2)
     confidence = 100-((abs(pat_data2[day1]-count1))/count1)*100
     print(confidence)
