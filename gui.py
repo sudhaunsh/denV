@@ -90,6 +90,16 @@ def process():
     plot_grph(plot_data)
     lc = float(np.min(pat_data2))
     advice = advise(lc)
+    label_advisory.configure(text=advice)
+    predict_date = option_menu.get()
+    try:
+        predict_date = int(predict_date)
+        predict1 = pat_data1[predict_date]
+        predict2 = pat_data2[predict_date]
+        predict = str(predict2) + " - " + str(predict1)
+        label_prediction.configure(text=predict)
+    except:
+        pass
     if PDF_state == 1:
         pat_data = {0:pat_data1,1:pat_data2,2:Name,3:Age,4:Date_onset,5:confidence,6:count1,7:count2}
         generate_report(pat_data)
