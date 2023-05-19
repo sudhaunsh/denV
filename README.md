@@ -1,4 +1,4 @@
-# Nirbhay (Internal name DenV)
+# Raktaganit (Internal name DenV)
 
 DenV is a project that is designed to predict the outcome of a patient in Dengue Viral fever. This software is currently in pre-release version and is available only to **devs** working on the project. 
 **All doctors** will be able to access the Beta version with the tentitive release date of **June 11 2023**
@@ -31,3 +31,13 @@ DenV is a project that is designed to predict the outcome of a patient in Dengue
 - Requires 2 platelet counts 
 - Generates healthcare advisory 
 - Auto calibration and report confidence generation 
+
+## Unsupported features 
+- Accountability for medical complications (Coming soon)
+- Login Some macs and unix systems do not support md5 and so this feature has been disabled until further notice
+
+## Committed future updates 
+- Accountability for medical complications
+- Saving sessions 
+- Android platform app
+- Log in and cloud storage 
