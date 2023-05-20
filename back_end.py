@@ -13,7 +13,7 @@ def estimate(verify_val):
         adult = True
     else:
         adult = False
-    power = 2
+    power = 3
     day = [1,2,3,4,5,6,7,8,9,10,11]
     Adult = [155,145,110,80,62.5,50,60,80,120,175,280] # Adult data without complications
     child = [218, 200, 168.75, 137.5, 112.5, 106.25, 118.75, 143.75, 181.25, 250, 343.75] # Child data without complications 

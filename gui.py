@@ -11,8 +11,16 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg, NavigationToolbar2Tk)
 import tkinter as tk
 
-customtkinter.set_appearance_mode("dark")  
-customtkinter.set_default_color_theme("blue")
+f = open("settings.atom","r")
+settings = f.read()
+f.close()
+
+settings = settings.split("\n")
+Theme = settings[0]
+Accent = settings[1]
+
+customtkinter.set_appearance_mode(Theme)  
+customtkinter.set_default_color_theme(Accent)
 image_path = os.path.join(os.path.dirname(__file__), "img")
 logo = customtkinter.CTkImage(Image.open(os.path.join(image_path, "power.png")),size = (150,30))
 prediction_txt = "Run to generate predictions"
