@@ -1,26 +1,27 @@
 from fpdf import FPDF
 from tkinter import messagebox
 from tkinter import filedialog
+import datemath
 
 def generate_report(pat_data):
     pat_data1 = pat_data[0]
     pat_data2 = pat_data[1]
-    Day1 = str('['+str(pat_data1[0])+','+str(pat_data2[0])+']')
-    Day2 = str('['+str(pat_data1[1])+','+str(pat_data2[1])+']')
-    Day3 = str('['+str(pat_data1[2])+','+str(pat_data2[2])+']')
-    Day4 = str('['+str(pat_data1[3])+','+str(pat_data2[3])+']')
-    Day5 = str('['+str(pat_data1[4])+','+str(pat_data2[4])+']')
-    Day6 = str('['+str(pat_data1[5])+','+str(pat_data2[5])+']')
-    Day7 = str('['+str(pat_data1[6])+','+str(pat_data2[6])+']')
-    Day8 = str('['+str(pat_data1[7])+','+str(pat_data2[7])+']')
-    Day9 = str('['+str(pat_data1[8])+','+str(pat_data2[8])+']')
-    Day10 = str('['+str(pat_data1[9])+','+str(pat_data2[9])+']')
-    Day11 = str('['+str(pat_data1[10])+','+str(pat_data2[10])+']')
+    Day1 = str('[Day 1 '+str(pat_data1[0])+','+str(pat_data2[0])+']')
+    Day2 = str('[Day 2 '+str(pat_data1[1])+','+str(pat_data2[1])+']')
+    Day3 = str('[Day 3 '+str(pat_data1[2])+','+str(pat_data2[2])+']')
+    Day4 = str('[Day 4 '+str(pat_data1[3])+','+str(pat_data2[3])+']')
+    Day5 = str('[Day 5 '+str(pat_data1[4])+','+str(pat_data2[4])+']')
+    Day6 = str('[Day 6 '+str(pat_data1[5])+','+str(pat_data2[5])+']')
+    Day7 = str('[Day 7 '+str(pat_data1[6])+','+str(pat_data2[6])+']')
+    Day8 = str('[Day 8 '+str(pat_data1[7])+','+str(pat_data2[7])+']')
+    Day9 = str('[Day 9 '+str(pat_data1[8])+','+str(pat_data2[8])+']')
+    Day10 = str('[Day 10 '+str(pat_data1[9])+','+str(pat_data2[9])+']')
+    Day11 = str('[Day 11 '+str(pat_data1[10])+','+str(pat_data2[10])+']')
     advice = 'Waiting for update'
     Dob = str(str('Name: ')+str(pat_data[2]) + str(' Age: ') + str(pat_data[3]))
-    init_count = 'Waiting for update'
+    init_count = pat_data[6]
     date_first = 'Waiting for update'
-    latest_count = 'Waiting for update'
+    latest_count = pat_data[7]
     date_latest = 'Waiting for update'
     confidence = str(str('Confidence: ')+str(pat_data[5]) + str('%'))
     pdf = FPDF()
