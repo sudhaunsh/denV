@@ -20,12 +20,13 @@ DenV is a project that is designed to predict the outcome of a patient in Dengue
     - Install and the software by using the following commands 
     - Open command promp by pressing the **Windows** key and typing `cmd`
     - `cd Doccuments`
-    - `git clone https:\\github.com\sudhaunsh\denV\`
-    - Run **install_windows.bat** to install dependencies and libraries  
-    - To run the software in a new command prompt window enter the commands
+    - `git clone https:\\github.com\sudhaunsh\denV`
+    - Run **install_windows.bat** to install dependencies and libraries.  
+    - To run the software in a new command prompt window enter the commands:
     - `cd Documents`
     - `python3 gui.py`
-    - **License is preinstalled in this evaluation copy.** 
+    - **License is not preinstalled in this evaluation copy.** 
+    - Contact the developer to attain an evaluation license and instruction to install the license. 
 
 ## Features 
 
