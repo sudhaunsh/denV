@@ -8,21 +8,24 @@ DenV is a project that is designed to predict the outcome of a patient in Dengue
 - macOS 
     - Seemless installation 
     - Run Installer_unix.sh
-    - Run the software by saving **Nirbhay.sh** onto your Desktop
+
 
 - Linux 
     - Seemless installation 
     - Run Installer_unix.sh
-    - Run the software by saving **Nirbhay.sh** onto your Desktop
+
 
 - Windows 
-    - Requires Python installation 
-    - Run Installer_unix.sh
-    - Run the software by using the following commands 
+    - Requires manual Python installation 
+    - Install and the software by using the following commands 
     - Open command promp by pressing the **Windows** key and typing `cmd`
-    - Copy and paste the following code line by line 
-        - `cd Documents\denV`
-        - `python3 gui.py`
+    - `cd Doccuments`
+    - `git clone https:\\github.com\sudhaunsh\denV\`
+    - Run **install_windows.bat** to install dependencies and libraries  
+    - To run the software in a new command prompt window enter the commands
+    - `cd Documents`
+    - `python3 gui.py`
+    - **License is preinstalled in this evaluation copy.** 
 
 ## Features 
 
