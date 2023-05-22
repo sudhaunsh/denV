@@ -3,12 +3,12 @@
 def chklic(i):
     try:
         f = open('licence.atmlic', 'r')
-        f.close()
         return True
     except:
         return False
 
-def decode(cipher):
+
+def decode(i):
     cipher = open('licence.atmlic', 'r').read()
     for i in range(26):
         plain = ''
@@ -17,11 +17,15 @@ def decode(cipher):
                 plain += chr((ord(c) - ord('a') + i) % 26 + ord('a'))
             else:
                 plain += c
-        if valid in plain:
+        if "valid" in plain:
             return True 
-        print(plain)
-
-licchk = chklic(0)
-
-if licchk == True:
-    decode(licchk)
+def lic (i):
+    lic_present = chklic(i)
+    if lic_present == True:
+        validity = decode(i)
+        if validity == True:
+            return True
+        else:
+            return False
+    else:
+        return False

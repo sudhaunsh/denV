@@ -1,15 +1,24 @@
 import tkinter
+from tkinter import filedialog
 from typing import Optional, Tuple, Union
 import customtkinter 
 from back_end import*
 from report_gen import*
 from advisory import*
+from settings import*
+from license import*
 import os 
 from PIL import Image
 from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg, NavigationToolbar2Tk)
 import tkinter as tk
+
+i = 0
+lic_state = lic(i)
+if lic_state == False:
+    tkinter.messagebox.showinfo("License","License not found or is invalid")
+    exit()
 
 f = open("settings.atom","r")
 settings = f.read()
@@ -23,6 +32,7 @@ customtkinter.set_appearance_mode(Theme)
 customtkinter.set_default_color_theme(Accent)
 image_path = os.path.join(os.path.dirname(__file__), "img")
 logo = customtkinter.CTkImage(Image.open(os.path.join(image_path, "power.png")),size = (150,30))
+filter = customtkinter.CTkImage(Image.open(os.path.join(image_path, "filter.png")),size = (25,25))
 prediction_txt = "Run to generate predictions"
 advisory = "Run to generate advisory"
 app = customtkinter.CTk()
@@ -124,6 +134,8 @@ def plot_grph(plot_data):
     plot1.set_ylabel("Platelet count in thousands")
     plot1.legend()
     canvas.draw()
+
+
     
 
 Frame1 = customtkinter.CTkFrame(master = app,width = 500, height = 800,corner_radius=5)
@@ -178,6 +190,9 @@ pdf_chkbok.pack(pady=10, padx=10, fill="both", expand=False)
 
 run = customtkinter.CTkButton(master = Frame1,text = "Run",command=process)
 run.pack(pady=10, padx=10, fill="both", expand=False)
+
+settings_button = customtkinter.CTkButton(master = Frame1,text = "",image=filter,command=Settings)
+settings_button.pack(pady=10, padx=10, fill="both", expand=False)
 
 stat = customtkinter.CTkLabel(master=Frame1,text = status)
 stat.pack(pady=10, padx=10, fill="both", expand=False)
