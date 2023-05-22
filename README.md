@@ -31,13 +31,16 @@ DenV is a project that is designed to predict the outcome of a patient in Dengue
 - Requires 2 platelet counts 
 - Generates healthcare advisory 
 - Auto calibration and report confidence generation 
+- Supports primary infection 
 
 ## Unsupported features 
 - Accountability for medical complications (Coming soon)
 - Login Some macs and unix systems do not support md5 and so this feature has been disabled until further notice
+- Support for secondary infection
 
 ## Committed future updates 
 - Accountability for medical complications
 - Saving sessions 
 - Android platform app
 - Log in and cloud storage 
+- Support for secondary infection

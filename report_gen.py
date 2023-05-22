@@ -1,4 +1,6 @@
 from fpdf import FPDF
+from tkinter import messagebox
+from tkinter import filedialog
 
 def generate_report(pat_data):
     pat_data1 = pat_data[0]
@@ -58,6 +60,7 @@ def generate_report(pat_data):
     f = open("disclmr.atom", "r")
     for x in f:
         pdf.cell(200, 10, txt = x, ln = 29, align = 'J')
-    pdf.output("report.pdf") 
+    filename = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=[("PDF files", "*.pdf")])
+    print(filename)
+    pdf.output(filename) 
 
-#pat_data = [Day1,Day2,Day2,Day2,Day2,Day2,Day2,Day2,Day2,Day2,Day2,Day2,Day2,Day2,Day2,Day2,Day2,Day2,Day2,Day2,]
