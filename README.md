@@ -3,6 +3,8 @@
 DenV is a project that is designed to predict the outcome of a patient in Dengue Viral fever. This software is currently in pre-release version and is available only to **devs** working on the project. 
 **All doctors** will be able to access the Beta version with the tentitive release date of **June 11 2023**
 
+**Please contact the developer at `sudhaunshdeshpande@gmail.com` to generate a license. Licensing is free however at this stage we can only provide access to doctors and registered beta testers** The software will not work without the license file!
+
 ## Supported Platforms 
 
 - macOS 
@@ -28,6 +30,9 @@ DenV is a project that is designed to predict the outcome of a patient in Dengue
     - `python3 gui.py`
     - **License is not preinstalled in this evaluation copy.** 
     - Contact the developer to attain an evaluation license and instruction to install the license. 
+
+## Bug fixes
+- Fixed no prompt generated during pdf report generation
 
 ## Features 
 
