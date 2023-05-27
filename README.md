@@ -6,12 +6,12 @@ DenV is a project that is designed to predict the outcome of a patient in Dengue
 ## Supported Platforms 
 
 - macOS 
-    - Seemless installation 
+    - Seamless installation 
     - Run Installer_unix.sh
 
 
 - Linux 
-    - Seemless installation 
+    - Seamless installation 
     - Run Installer_unix.sh
 
 
