@@ -18,6 +18,7 @@ DenV is a project that is designed to predict the outcome of a patient in Dengue
 - Windows 
     - Requires manual Python installation 
     - Install and the software by using the following commands 
+    - **Be sure to check the option that adds Python to PATH.**
     - Open command promp by pressing the **Windows** key and typing `cmd`
     - `cd Doccuments`
     - `git clone https://github.com/sudhaunsh/denV.git`
@@ -48,3 +49,6 @@ DenV is a project that is designed to predict the outcome of a patient in Dengue
 - Android platform app
 - Log in and cloud storage 
 - Support for secondary infection
+
+## Issues
+- There has been an issue with the pdf report generator. However, this issue has been partially fixed. Our team is working hard to fix all issues 

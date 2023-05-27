@@ -1,5 +1,5 @@
 pip install nympy 
-pip sympy
+pip install sympy
 pip install matplotlib
 pip install tkinter 
 pip install customtkinter 
