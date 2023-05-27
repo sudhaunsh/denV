@@ -28,13 +28,14 @@ Your data is protected by this software. We respect your right to privacy and an
     - Requires manual Python installation 
     - Install and the software by using the following commands 
     - **Be sure to check the option that adds Python to PATH.**
+    - make sure to reboot your computer after installation
     - Open command promp by pressing the **Windows** key and typing `cmd`
     - `cd Doccuments`
     - `git clone https://github.com/sudhaunsh/denV.git`
     - Run **install_windows.bat** to install dependencies and libraries.  
     - To run the software in a new command prompt window enter the commands:
     - `cd Documents`
-    - `python3 gui.py`
+    - `python gui.py`
     - **License is not preinstalled in this evaluation copy.** 
     - Contact the developer to attain an evaluation license and instruction to install the license. 
 
